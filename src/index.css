@@ -1,0 +1,66 @@
+/* ===== Design tokens ===== */
+
+:root {
+  /* Deep navy blue spectrum */
+  --navy-900: #0b132b;
+  --navy-800: #111a30;
+  --navy-700: #1c2541;
+  --navy-600: #27325a;
+  --navy-500: #334272;
+
+  /* Gold accent spectrum */
+  --gold-500: #e5a93b;
+  --gold-400: #ffd700;
+  --gold-300: #ffdf5f;
+
+  /* Neutrals */
+  --white: #ffffff;
+  --gray-100: #f1f3f7;
+  --gray-300: #b9c1d9;
+  --gray-500: #7a87a7;
+  --gray-700: #4a5673;
+
+  /* Status colors */
+  --green-400: #4ade80;
+  --red-400: #f87171;
+
+  /* Semantic aliases */
+  --color-bg: var(--navy-900);
+  --color-surface: var(--navy-800);
+  --color-surface-elevated: var(--navy-700);
+  --color-text: var(--gray-100);
+  --color-text-secondary: var(--gray-300);
+  --color-border: var(--navy-600);
+}
+
+/* ===== Base / reset ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family:
+    "Inter", "Segoe UI", system-ui, -apple-system, "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
